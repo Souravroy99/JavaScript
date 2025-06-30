@@ -1,5 +1,4 @@
 /* 
-
 function x() {
     var i = 1 ;
     setTimeout(() => {
@@ -12,7 +11,6 @@ function x() {
 x();
 
 */
-
 
 
 // Q1 ---> Print 1 to 5 at 1 second inetrval
@@ -45,36 +43,36 @@ x();
 /*
     Explanation:
         
-        ✅ let is block-scoped: In function A(), you're using let i, which creates a new binding of i for every iteration of the loop.
+        ✅ let is block-scoped: In function A(), you're using let i, which creates a new binding of 'i' for every iteration of the loop.
 
-        ❌ var is function-scoped: In function B(), var i is hoisted and shared across all iterations. So by the time the timeout callbacks run (after 1s, 2s, ...), the loop is already finished and i has become 6.
+        ❌ var is function-scoped: In function B(), var 'i' is hoisted and shared across all iterations. So by the time the timeout callbacks run (after 1s, 2s, ...), the loop is already finished and i has become 6.
 */
 
 // Alternative Solutions: Use normal Function OR, IIFE (Immediately Invoked Function Expression):
 
-function C() {
-    for(var i=1 ; i<=5 ; i++)
-    {
-        function D(j) {
-            setTimeout(() => {
-                console.log(j);
-            }, j*1000);
+    function C() {
+        for(var i=1 ; i<=5 ; i++)
+        {
+            // function D(j) {
+            //     setTimeout(() => {
+            //         console.log(j);
+            //     }, j*1000);
+            // }
+
+            // D(i) ;
+                                      
+            // OR --> IIFE
+            /*
+            */
+                ((j) => {
+                    setTimeout(() => {
+                        console.log(j);
+                    }, j * 1000) ;
+                })(i) ;
         }
-
-        D(i) ;
-
-        // OR --> IIFE
-        /*
-            ((j) => {
-                setTimeout(() => {
-                    console.log(j);
-                }, j * 1000) ;
-            })(i) ;
-        */
     }
-}
 
 
-        // A() ;
-        B() ;
-        // C() ;
+//         // A() ;
+//         B() ;
+//         // C() ;

@@ -1,0 +1,15 @@
+// Callback Function
+
+// Js is a synchronous and single threaded
+
+// Blocking the main threaded
+
+// Power of Callback
+
+// Event Listeners
+
+// Closures demo with Event Listeners
+
+// Scope demo with Event Listeners
+
+// Garbage Collection and removeEventListeners
