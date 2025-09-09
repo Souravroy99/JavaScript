@@ -1,3 +1,4 @@
+// Function Statement
 // Function Expression
 // Function Declaration
 // Anonymous Function

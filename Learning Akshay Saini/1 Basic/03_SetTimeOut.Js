@@ -1,3 +1,5 @@
+// Inside of setTimeout --> A closure forms
+
 /* 
 function x() {
     var i = 1 ;
@@ -15,7 +17,7 @@ x();
 
 // Q1 ---> Print 1 to 5 at 1 second inetrval
 
-    // Answer 1 --> Using let  ✅ Correct
+    // Answer 1 --> Using let ✅ Correct
         function A() {
             for(let i=1 ; i<=5 ; i++)
             {
@@ -28,7 +30,7 @@ x();
         }
 
 
-    // Answer 2 --> Using var  ❌ Wrong
+    // Answer 2 --> Using var ❌ Wrong
         function B() {
             for(var i=1 ; i<=5 ; i++)
             {
@@ -73,6 +75,6 @@ x();
     }
 
 
-//         // A() ;
-//         B() ;
-//         // C() ;
+        // A() ;
+        // B() ;
+        C() ;

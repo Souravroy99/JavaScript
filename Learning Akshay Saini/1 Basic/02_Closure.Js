@@ -9,24 +9,24 @@
 
 
 
-// Closures ---> A Closure is the combination of a function bundled together with its Lexical environment
+// Closures ---> A Closure is the combination of a function bundled together with its Lexical environment(scope).
 
 /* Example 1 */
 
 function func1() {
-    var a = 10 ;
+    var a = 10 
     
     function func2() {
-        console.log(`Value of A is: ${a}`);
+        console.log(`Value of A is: ${a}`)
     }
 
-    return func2 ;
+    return func2 
 }
 
-let func3 = func1() ;  
+let func3 = func1() 
 
-console.log(func3) ;
-func3() ; // As 'func1' is finished, but still we getting the value of 'a' as 10. So according to closure's property we getting function along with its lexical scope.
+console.log(func3) 
+func3()  // As 'func1' is finished, but still we getting the value of 'a' as 10. So according to closure's property we getting function along with its lexical scope.
 
 
 

@@ -1,4 +1,4 @@
-/* 
+/*
 First-class functions are a fundamental concept in programming where functions are treated like any other variable. This means you can:
 
     i.) Assign a function to a variable
@@ -7,14 +7,13 @@ First-class functions are a fundamental concept in programming where functions a
 */
 
 
-
 // Example 1 --> Passing func as a parameter
 /*
 const a = function xyz(parameter) {
     parameter()
 }
 
-const b = function(){
+const b = function() {
     console.log('Passing Function');
 }
 a(b)
@@ -22,7 +21,7 @@ a(b)
 
 
 // Example 2 --> Returning func
-
+/*
 const c = function(val) {
     return function() {
         console.log(val * val);
@@ -31,3 +30,4 @@ const c = function(val) {
 
 c(10)()
 console.log(c(10)());
+*/

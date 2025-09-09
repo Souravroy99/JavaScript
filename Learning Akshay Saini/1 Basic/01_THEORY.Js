@@ -12,10 +12,12 @@
 
 
 /* 
-3.) Datatype 
-    Premitive 7 --> Number, String, Boolean, BigInt, Undefined, Symbol, Null
-    Non-Premitive(return type is object to all) --> Arrays, Objects, Functions
+3.) Datatypes: 
+
+    i.) Premitive 7 --> Number, String, Boolean, BigInt, Undefined, Symbol, null
+    ii.) Non-Premitive(return type is object to all) --> Objects(Arrays, Functions, Date, ...)
 */
+
 
 /*
 4.) JavaScript is considered a """dynamically typed language""" because the type of a variable is determined at runtime. This means you don’t need to explicitly declare the type of a variable when defining it.
@@ -45,17 +47,17 @@ console.log(id_1, id_2)
 
     ** let & const throw ReferenceError before initialization, due to TDZ.(they are hoisted, but they behave differently because of TDZ.)
     
-*/
-
-    /* Hoisting is possible */
+    
+    // *** Hoisting is possible
         console.log(a); // "undefined" due to hoisting --> Memory is declares in 'GLOBAL' execution context but value is not defined 
         var a = 10;
-
-    /* Hoisting is not possible */
-        // console.log(b); // Hoisting is 'NOT' possible for 'let' due to temporal dead-zone
-        // let b = 5 ;
-
-
+    
+    // *** Hoisting is not possible
+        console.log(b); // Hoisting is 'NOT' possible for 'let' due to temporal dead-zone
+        let b = 5 ;
+        
+*/
+        
 
 /**********************************************************************************************/
 
@@ -109,3 +111,6 @@ console.log('Let_Work: ', let_work);
         }
     }
 }
+
+
+// Closures ---> Function with its lexical scope(environment) called Closures.

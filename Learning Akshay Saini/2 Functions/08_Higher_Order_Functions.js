@@ -18,13 +18,31 @@ function y(x) {
     x()
 }
 
-// y(x)
+y(x)
 
+// Another code
+const radius = [3,1,2,4]
 
-const radius = [1,2,3,4]
-
-const calculateArea = (r) => {
-    console.log(`${r} --> ${Math.PI * r * r}`) ;
+function area(r) {
+    return Math.PI * r * r ;
+}
+function circumference(r) {
+    return 2 * Math.PI * r ;
+}
+function diameter(r) {
+    return 2 * r ;
 }
 
-for(let i=0; i<radius.length ; i++) calculateArea(radius[i]) ;
+function calculate(func) {
+    const output = []
+
+    for(let i=0; i<radius.length ; i++) {
+        output.push(func(radius[i]))
+    }
+
+    return output
+}
+
+console.log(calculate(diameter))
+console.log(calculate(circumference))
+console.log(calculate(area))
