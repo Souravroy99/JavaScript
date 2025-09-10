@@ -1,10 +1,6 @@
-/*
-    Callback Hell: It refers to the situation where multiple nested callbacks make the code difficult to read, maintain, and debug.
-*/
-
 const cart = ["shoes", "pants", "Kurtas", "sarees"]
 
-// Problem: Callback Hell
+// Problem: Callback Hell --> Hard to debug, maintain, read
 createOrder(cart, (orderId) => {
     proceesToPayment(orderId, (paymentInfo) => {
         showOrderSummary(paymentInfo, () => {
@@ -12,7 +8,7 @@ createOrder(cart, (orderId) => {
         })
     })
 })
-
+ 
 
 // Solution: Promise Chaining
 createOrder(cart)
