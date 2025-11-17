@@ -1,18 +1,33 @@
 // Inside of setTimeout --> A closure forms
 
 /* 
+
 function x() {
     var i = 1 ;
+
     setTimeout(() => {
         console.log(i);
     }, 2000)
     
-    console.log(`This is the example that JS is Asynchronous`);
+    console.log(`This is the example that: JS is Asynchronous`);
 }
 
-x();
+    x();
 
 */
+
+
+for(let i=1 ; i<=5 ; i++)
+{
+    setTimeout(() => {
+        console.log(i)
+    }, i*1000);
+}
+
+
+
+
+
 
 
 // Q1 ---> Print 1 to 5 at 1 second inetrval
@@ -45,7 +60,7 @@ x();
 /*
     Explanation:
         
-        ✅ let is block-scoped: In function A(), you're using let i, which creates a new binding of 'i' for every iteration of the loop.
+        ✅ let is block-scoped: In function A(), you're using let 'i', which creates a new binding of 'i' for every iteration of the loop.
 
         ❌ var is function-scoped: In function B(), var 'i' is hoisted and shared across all iterations. So by the time the timeout callbacks run (after 1s, 2s, ...), the loop is already finished and i has become 6.
 */
@@ -77,4 +92,4 @@ x();
 
         // A() ;
         // B() ;
-        C() ;
+        // C() ;

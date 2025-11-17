@@ -1,6 +1,11 @@
-function a() {
-    console.log(b);
+var n = 2 ;
+function square(num) {
+    var ans = num*num ;
+    return ans ;
 }
 
-var b = 10 ;
-a()
+var square2 = square(n);
+var square4 = square(4);
+
+
+console.log(`${square2} AND ${square4}`);

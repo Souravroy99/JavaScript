@@ -1,10 +1,16 @@
+/*
+    ** In JS ==> Everything happens inside of execution context
+    ** JS is Synchronous and Single-threaded(1 command at a time)
+*/
+
+
 /* 
 1.)  Scope --> The environment in which variables, functions, and objects are accessible and usable.
 */
 
 
 /* 
-2.) Lexical scope ---> A function can access variables defined in its outer(parent) scope. 
+2.) Lexical scope ---> A function can access variables, which is defined in its outer(parent) scope. 
                        So in this case outer scope is the Lexical scope of Inner function.
  
     ** Scope Chain: Chain of Lexical environments
@@ -53,7 +59,7 @@ console.log(id_1, id_2)
         var a = 10;
     
     // *** Hoisting is not possible
-        console.log(b); // Hoisting is 'NOT' possible for 'let' due to temporal dead-zone
+        console.log(b); // Hoisting is 'NOT' possible for 'let' due to temporal dead-zone(TDZ)
         let b = 5 ;
         
 */

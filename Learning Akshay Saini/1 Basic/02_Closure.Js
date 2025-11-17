@@ -74,6 +74,8 @@ function x()
     return y ;
 }
 
-let w = x() ;
+let w = x();
 console.log(w);
+console.log(w());
+
 w()() ;
