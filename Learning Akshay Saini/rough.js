@@ -1,15 +1,19 @@
-var x = 1 ;
-a();
-b();
+console.log(this);
 
-console.log(x);
 
-function a() {
-    var x = 2 ;
-    console.log(x);
-}
+// var x = 1 ;
+// var x = 20 ; // Redeclaration is possible in `var`
+// a();
+// b();
 
-function b() {
-    var x = 3 ;
-    console.log(x);
-}
+// console.log(x);
+
+// function a() {
+//     var x = 2 ;
+//     console.log(x);
+// }
+
+// function b() {
+//     var x = 3 ;
+//     console.log(x);
+// }
