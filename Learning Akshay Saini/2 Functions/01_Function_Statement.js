@@ -1,7 +1,7 @@
 a();
 
 function a() {
-    console.log("Function Statement");
+    console.log("Function Statement 321");
 }
 
 // a();
