@@ -1,6 +1,6 @@
 (()=>{
     console.log("Immediately Invoked Function Expression");
-})();
+})();   // We must need to provide "semi-colon" after "IIFE", for explicitly terminate "IIFE" 
 
 
 /************************ Key characteristics ************************/
