@@ -43,6 +43,7 @@ console.log(id1 == id2); // false
     To generate a random number between x and y (inclusive) ==>
 */
 
+/*
 let x = 10, y = 20 ;
 let val = x + Math.floor(Math.random() * (y - x + 1)) ; 
 // console.log(val);
@@ -54,3 +55,10 @@ console.log(myDate.toLocaleString());
 
 const myDateNow = Date.now();
 console.log(myDateNow);
+*/
+
+
+console.log(isNaN('hello'));
+console.log(isNaN(NaN));
+console.log(isNaN(undefined));
+console.log(isNaN(null));
