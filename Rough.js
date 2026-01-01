@@ -1,7 +1,5 @@
-const arr = [2,3,5,7]
+const arr = [1,2,7,9]
 
-const sum = arr.reduce((acc, ele) => {
-    return acc + ele ;
-}, 3)
+const sum = arr.reduce((acc, ele) => acc+ele, 80)
 
 console.log(sum);
