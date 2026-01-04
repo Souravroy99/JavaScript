@@ -53,7 +53,8 @@ promiseThree.then((info) => {
 */
 
 
-
+/*
+*/
 const promiseFour = new Promise((resolve, reject) => {
     setTimeout(() => {
         let error = !true;
@@ -67,20 +68,18 @@ const promiseFour = new Promise((resolve, reject) => {
     }, 2000);
 })
 
-async function consumePromiseFour(){
+async function consumePromiseFour() {
     try {
         const res = await promiseFour
         console.log(res);
-        return res 
-        
-    } catch (error) {
+    } 
+    catch (error) {
         console.log(error);
     }
 }
 
 consumePromiseFour()
-
-
+ 
 
 
 /*
